@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,13 @@
 		FDE6177024BEB42700BC5C4E /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6176F24BEB42700BC5C4E /* SafariExtensionViewController.swift */; };
 		FDE6177324BEB42700BC5C4E /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE6177124BEB42700BC5C4E /* SafariExtensionViewController.xib */; };
 		FDE6177624BEB42700BC5C4E /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = FDE6177524BEB42700BC5C4E /* script.js */; };
-		FDE6177824BEB42700BC5C4E /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FDE6177724BEB42700BC5C4E /* ToolbarItemIcon.pdf */; };
+		FDE6178524BEB48800BC5C4E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FDE6178424BEB48800BC5C4E /* KeychainAccess */; };
+		FDE6178824BEB4A900BC5C4E /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = FDE6178724BEB4A900BC5C4E /* SwiftOTP */; };
+		FDE6178C24BEB5F100BC5C4E /* ConfigVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6178924BEB5F100BC5C4E /* ConfigVC.swift */; };
+		FDE6178D24BEB5F100BC5C4E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6178A24BEB5F100BC5C4E /* MainVC.swift */; };
+		FDE6178E24BEB5F100BC5C4E /* EnterLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6178B24BEB5F100BC5C4E /* EnterLinkVC.swift */; };
+		FDE6179024BEB66500BC5C4E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FDE6178F24BEB66500BC5C4E /* KeychainAccess */; };
+		FDE6179224BEB66500BC5C4E /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = FDE6179124BEB66500BC5C4E /* SwiftOTP */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +66,10 @@
 		FDE6177224BEB42700BC5C4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		FDE6177424BEB42700BC5C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDE6177524BEB42700BC5C4E /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		FDE6177724BEB42700BC5C4E /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		FDE6177924BEB42700BC5C4E /* Boiler_Key_Safari_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Boiler_Key_Safari_Extension.entitlements; sourceTree = "<group>"; };
+		FDE6178924BEB5F100BC5C4E /* ConfigVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigVC.swift; sourceTree = "<group>"; };
+		FDE6178A24BEB5F100BC5C4E /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FDE6178B24BEB5F100BC5C4E /* EnterLinkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterLinkVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE6178824BEB4A900BC5C4E /* SwiftOTP in Frameworks */,
+				FDE6178524BEB48800BC5C4E /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE6179024BEB66500BC5C4E /* KeychainAccess in Frameworks */,
+				FDE6179224BEB66500BC5C4E /* SwiftOTP in Frameworks */,
 				FDE6176B24BEB42700BC5C4E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +119,9 @@
 			children = (
 				FDE6175524BEB42600BC5C4E /* Boiler_Key_Safari.entitlements */,
 				FDE6175724BEB42600BC5C4E /* AppDelegate.swift */,
+				FDE6178924BEB5F100BC5C4E /* ConfigVC.swift */,
+				FDE6178B24BEB5F100BC5C4E /* EnterLinkVC.swift */,
+				FDE6178A24BEB5F100BC5C4E /* MainVC.swift */,
 				FDE6175924BEB42600BC5C4E /* Main.storyboard */,
 				FDE6175C24BEB42600BC5C4E /* ViewController.swift */,
 				FDE6175E24BEB42700BC5C4E /* Assets.xcassets */,
@@ -131,7 +146,6 @@
 				FDE6177124BEB42700BC5C4E /* SafariExtensionViewController.xib */,
 				FDE6177424BEB42700BC5C4E /* Info.plist */,
 				FDE6177524BEB42700BC5C4E /* script.js */,
-				FDE6177724BEB42700BC5C4E /* ToolbarItemIcon.pdf */,
 				FDE6177924BEB42700BC5C4E /* Boiler_Key_Safari_Extension.entitlements */,
 			);
 			path = "Boiler-Key-Safari Extension";
@@ -155,6 +169,10 @@
 				FDE6176824BEB42700BC5C4E /* PBXTargetDependency */,
 			);
 			name = "Boiler-Key-Safari";
+			packageProductDependencies = (
+				FDE6178424BEB48800BC5C4E /* KeychainAccess */,
+				FDE6178724BEB4A900BC5C4E /* SwiftOTP */,
+			);
 			productName = "Boiler-Key-Safari";
 			productReference = FDE6175224BEB42600BC5C4E /* Boiler-Key-Safari.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +190,10 @@
 			dependencies = (
 			);
 			name = "Boiler-Key-Safari Extension";
+			packageProductDependencies = (
+				FDE6178F24BEB66500BC5C4E /* KeychainAccess */,
+				FDE6179124BEB66500BC5C4E /* SwiftOTP */,
+			);
 			productName = "Boiler-Key-Safari Extension";
 			productReference = FDE6176524BEB42700BC5C4E /* Boiler-Key-Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -203,6 +225,10 @@
 				Base,
 			);
 			mainGroup = FDE6174924BEB42600BC5C4E;
+			packageReferences = (
+				FDE6178324BEB48800BC5C4E /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				FDE6178624BEB4A900BC5C4E /* XCRemoteSwiftPackageReference "SwiftOTP" */,
+			);
 			productRefGroup = FDE6175324BEB42600BC5C4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -228,7 +254,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE6177824BEB42700BC5C4E /* ToolbarItemIcon.pdf in Resources */,
 				FDE6177324BEB42700BC5C4E /* SafariExtensionViewController.xib in Resources */,
 				FDE6177624BEB42700BC5C4E /* script.js in Resources */,
 			);
@@ -242,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE6175D24BEB42600BC5C4E /* ViewController.swift in Sources */,
+				FDE6178D24BEB5F100BC5C4E /* MainVC.swift in Sources */,
 				FDE6175824BEB42600BC5C4E /* AppDelegate.swift in Sources */,
+				FDE6178C24BEB5F100BC5C4E /* ConfigVC.swift in Sources */,
+				FDE6178E24BEB5F100BC5C4E /* EnterLinkVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +539,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDE6178324BEB48800BC5C4E /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		FDE6178624BEB4A900BC5C4E /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lachlanbell/SwiftOTP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDE6178424BEB48800BC5C4E /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDE6178324BEB48800BC5C4E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		FDE6178724BEB4A900BC5C4E /* SwiftOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDE6178624BEB4A900BC5C4E /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			productName = SwiftOTP;
+		};
+		FDE6178F24BEB66500BC5C4E /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDE6178324BEB48800BC5C4E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		FDE6179124BEB66500BC5C4E /* SwiftOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDE6178624BEB4A900BC5C4E /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			productName = SwiftOTP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDE6174A24BEB42600BC5C4E /* Project object */;
 }
